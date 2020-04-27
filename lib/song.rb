@@ -9,5 +9,4 @@ attr_accessor :name, :artist
     def self.all
         @@all
     end
-
 end
