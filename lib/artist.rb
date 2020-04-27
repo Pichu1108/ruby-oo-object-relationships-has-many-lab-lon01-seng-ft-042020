@@ -1,11 +1,11 @@
 class Artist
-attr_accessor :name, 
+attr_accessor :name,
 @@all = []
     def initialize(name)
         @name = name
         @@all << self
     end
-    
+
     def songs
         Song.all.select {|songs| songs.artist == self}
     end
@@ -22,4 +22,4 @@ attr_accessor :name,
     def self.song_count
         Song.all.size
     end
-end
+en
